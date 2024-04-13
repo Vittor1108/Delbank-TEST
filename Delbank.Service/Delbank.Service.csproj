@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\NoSQL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Delbank.Domain\Delbank.Domain.csproj" />
+    <ProjectReference Include="..\Delbank.Infra.Data\Delbank.Infra.Data.csproj" />
+    <ProjectReference Include="..\Delbank.Messaging\Delbank.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>
